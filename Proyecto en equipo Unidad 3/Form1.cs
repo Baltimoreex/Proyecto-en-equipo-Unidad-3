@@ -45,11 +45,11 @@ namespace Proyecto_en_equipo_Unidad_3
             lblRange2.Text = jugador.Rango;
             lblLevel2.Text = "Nivel " + jugador.Nivel;
 
-            // Mostrar el tipo de jugador — línea nueva
+            
             lblTipo.Text = jugador.GetType().Name
                 .Replace("Player", "Tipo: ");
 
-            
+            ImageLoader.MostrarEn(picAvatar, "Profile_Images", "player" + (cmbPlayers.SelectedIndex + 1));
 
             if (jugador.Avatar != null)
             {
@@ -65,46 +65,7 @@ namespace Proyecto_en_equipo_Unidad_3
             PasoArmas(true);
             PasoAcciones(false);
         }
-        private void MostrarImagenArma(string nombreArma)
-        {
-            string[] extensiones = { ".png", ".jpg", ".jpeg" };
-
-            foreach (string ext in extensiones)
-            {
-                string ruta = Path.Combine(
-                    AppDomain.CurrentDomain.BaseDirectory,
-                    "Images",
-                    "Weapons_Images",
-                    nombreArma + ext
-                );
-
-                if (File.Exists(ruta))
-                {
-                    try
-                    {
-                       
-                        Image anterior = picWeapons.Image;
-                        picWeapons.Image = null;
-                        anterior?.Dispose();
-
-                        
-                        byte[] bytes = File.ReadAllBytes(ruta);
-                        using var ms = new MemoryStream(bytes);
-                        picWeapons.Image = Image.FromStream(ms);
-                        picWeapons.SizeMode = PictureBoxSizeMode.Zoom;
-                        return;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error cargando imagen: " + ex.Message);
-                        picWeapons.Image = null;
-                        return;
-                    }
-                }
-            }
-
-            picWeapons.Image = null;
-        }
+        
         private void cmbWeapons_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbWeapons.SelectedIndex == 0)
@@ -113,7 +74,7 @@ namespace Proyecto_en_equipo_Unidad_3
                 return;
             }
 
-            MostrarImagenArma(cmbWeapons.SelectedItem.ToString());
+            ImageLoader.MostrarEn(picWeapons, "Weapons_Images", cmbWeapons.SelectedItem.ToString());
         }
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
@@ -199,6 +160,9 @@ namespace Proyecto_en_equipo_Unidad_3
 
         }
 
-       
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -23,15 +23,8 @@ namespace Proyecto_en_equipo_Unidad_3
             Avatar = avatar;
         }
 
-        private static Image CargarImagen(string nombre)
-        {
-            string ruta = Path.Combine(
-                AppDomain.CurrentDomain.BaseDirectory, "Images",
-                "Profile_Images",
-                nombre
-            );
-            return File.Exists(ruta) ? Image.FromFile(ruta) : null;
-        }
+        private static Image CargarImagen(string nombre) =>
+        ImageLoader.Cargar("Profile_Images", nombre);
 
         public static Player[] ObtenerPerfiles() => new Player[]
         {

@@ -180,6 +180,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // cmbWeapons
             // 
@@ -390,11 +391,11 @@
             textShoot.Depth = 0;
             textShoot.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textShoot.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textShoot.Location = new Point(1413, 152);
+            textShoot.Location = new Point(1363, 152);
             textShoot.Margin = new Padding(3, 4, 3, 4);
             textShoot.MouseState = MaterialSkin.MouseState.HOVER;
             textShoot.Name = "textShoot";
-            textShoot.Size = new Size(116, 77);
+            textShoot.Size = new Size(229, 77);
             textShoot.TabIndex = 26;
             textShoot.Text = "";
             // 
@@ -405,11 +406,11 @@
             textReload.Depth = 0;
             textReload.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textReload.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textReload.Location = new Point(1413, 249);
+            textReload.Location = new Point(1363, 249);
             textReload.Margin = new Padding(3, 4, 3, 4);
             textReload.MouseState = MaterialSkin.MouseState.HOVER;
             textReload.Name = "textReload";
-            textReload.Size = new Size(116, 77);
+            textReload.Size = new Size(229, 77);
             textReload.TabIndex = 27;
             textReload.Text = "";
             // 
@@ -420,11 +421,11 @@
             textInspect.Depth = 0;
             textInspect.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textInspect.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textInspect.Location = new Point(1413, 360);
+            textInspect.Location = new Point(1363, 360);
             textInspect.Margin = new Padding(3, 4, 3, 4);
             textInspect.MouseState = MaterialSkin.MouseState.HOVER;
             textInspect.Name = "textInspect";
-            textInspect.Size = new Size(116, 77);
+            textInspect.Size = new Size(229, 77);
             textInspect.TabIndex = 28;
             textInspect.Text = "";
             // 
