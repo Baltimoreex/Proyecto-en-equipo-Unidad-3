@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Proyecto_en_equipo_Unidad_3.Players
+namespace Proyecto_en_equipo_Unidad_3
 {
     public class PlayerAgresivo : Player
     {

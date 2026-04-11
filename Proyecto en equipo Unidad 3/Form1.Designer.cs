@@ -579,11 +579,11 @@
             // lblTipo
             // 
             lblTipo.AutoSize = true;
-            lblTipo.Location = new Point(1308, 196);
+            lblTipo.Location = new Point(1182, 119);
             lblTipo.Name = "lblTipo";
-            lblTipo.Size = new Size(50, 20);
+            lblTipo.Size = new Size(116, 20);
             lblTipo.TabIndex = 41;
-            lblTipo.Text = "label1";
+            lblTipo.Text = "Tipo de jugador";
             // 
             // Form1
             // 

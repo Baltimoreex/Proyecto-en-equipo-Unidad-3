@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
 namespace Proyecto_en_equipo_Unidad_3
 {
     public partial class Form1 : Form
@@ -46,12 +49,7 @@ namespace Proyecto_en_equipo_Unidad_3
             lblTipo.Text = jugador.GetType().Name
                 .Replace("Player", "Tipo: ");
 
-            var perfiles = Player.ObtenerPerfiles();
-            jugador = perfiles[cmbPlayers.SelectedIndex];
-
-            lblName2.Text = jugador.Nombre;
-            lblRange2.Text = jugador.Rango;
-            lblLevel2.Text = "Nivel " + jugador.Nivel;
+            
 
             if (jugador.Avatar != null)
             {
