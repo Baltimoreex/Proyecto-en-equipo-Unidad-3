@@ -27,15 +27,15 @@ public class Player
     }
 
     public static Player[] ObtenerPerfiles() => new Player[]
-    {
-    new Player("CS_Player01", "Global Elite",    40, CargarImagen("player1.png")),
-    new Player("SniperKing",  "Master Guardian", 25, CargarImagen("player2.png")),
-    new Player("Rookie99",    "Novato",           5, CargarImagen("player3.png")),
-    };
+{
+    new PlayerAgresivo("CS_Player01", CargarImagen("player1")),
+    new PlayerTactico ("SniperKing",  CargarImagen("player2")),
+    new PlayerNovato  ("Rookie99",    CargarImagen("player3")),
+};
 
     public void EquiparArma(WeaponComponent weapon) => _weapon = weapon;
 
-    public string Disparar() => _weapon != null ? _weapon.Disparar() : "Sin arma equipada.";
-    public string Inspeccionar() => _weapon != null ? _weapon.Inspeccionar() : "Sin arma equipada.";
-    public string Recargar() => _weapon != null ? _weapon.Recargar() : "Sin arma equipada.";
+    public virtual string Disparar() => _weapon != null ? _weapon.Disparar() : "Sin arma equipada.";
+    public virtual string Inspeccionar() => _weapon != null ? _weapon.Inspeccionar() : "Sin arma equipada.";
+    public virtual string Recargar() => _weapon != null ? _weapon.Recargar() : "Sin arma equipada.";
 }

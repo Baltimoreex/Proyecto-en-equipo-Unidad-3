@@ -65,6 +65,7 @@
             textExtendedMagDescription = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             textHandleDescription = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             materialMultiLineTextBox1 = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            lblTipo = new Label();
             ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -389,11 +390,11 @@
             textShoot.Depth = 0;
             textShoot.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textShoot.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textShoot.Location = new Point(1335, 152);
+            textShoot.Location = new Point(1413, 152);
             textShoot.Margin = new Padding(3, 4, 3, 4);
             textShoot.MouseState = MaterialSkin.MouseState.HOVER;
             textShoot.Name = "textShoot";
-            textShoot.Size = new Size(194, 77);
+            textShoot.Size = new Size(116, 77);
             textShoot.TabIndex = 26;
             textShoot.Text = "";
             // 
@@ -404,11 +405,11 @@
             textReload.Depth = 0;
             textReload.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textReload.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textReload.Location = new Point(1335, 249);
+            textReload.Location = new Point(1413, 249);
             textReload.Margin = new Padding(3, 4, 3, 4);
             textReload.MouseState = MaterialSkin.MouseState.HOVER;
             textReload.Name = "textReload";
-            textReload.Size = new Size(194, 77);
+            textReload.Size = new Size(116, 77);
             textReload.TabIndex = 27;
             textReload.Text = "";
             // 
@@ -419,11 +420,11 @@
             textInspect.Depth = 0;
             textInspect.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
             textInspect.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            textInspect.Location = new Point(1335, 360);
+            textInspect.Location = new Point(1413, 360);
             textInspect.Margin = new Padding(3, 4, 3, 4);
             textInspect.MouseState = MaterialSkin.MouseState.HOVER;
             textInspect.Name = "textInspect";
-            textInspect.Size = new Size(194, 77);
+            textInspect.Size = new Size(116, 77);
             textInspect.TabIndex = 28;
             textInspect.Text = "";
             // 
@@ -575,12 +576,22 @@
             materialMultiLineTextBox1.TabIndex = 40;
             materialMultiLineTextBox1.Text = "-20 de daño,     +20 de Precision +500 de costo";
             // 
+            // lblTipo
+            // 
+            lblTipo.AutoSize = true;
+            lblTipo.Location = new Point(1308, 196);
+            lblTipo.Name = "lblTipo";
+            lblTipo.Size = new Size(50, 20);
+            lblTipo.TabIndex = 41;
+            lblTipo.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1678, 605);
+            Controls.Add(lblTipo);
             Controls.Add(materialMultiLineTextBox1);
             Controls.Add(textHandleDescription);
             Controls.Add(textExtendedMagDescription);
@@ -672,5 +683,6 @@
         private MaterialSkin.Controls.MaterialMultiLineTextBox textExtendedMagDescription;
         private MaterialSkin.Controls.MaterialMultiLineTextBox textHandleDescription;
         private MaterialSkin.Controls.MaterialMultiLineTextBox materialMultiLineTextBox1;
+        private Label lblTipo;
     }
 }

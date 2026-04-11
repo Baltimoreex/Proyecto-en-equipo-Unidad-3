@@ -42,6 +42,17 @@ namespace Proyecto_en_equipo_Unidad_3
             lblRange2.Text = jugador.Rango;
             lblLevel2.Text = "Nivel " + jugador.Nivel;
 
+            // Mostrar el tipo de jugador — línea nueva
+            lblTipo.Text = jugador.GetType().Name
+                .Replace("Player", "Tipo: ");
+
+            var perfiles = Player.ObtenerPerfiles();
+            jugador = perfiles[cmbPlayers.SelectedIndex];
+
+            lblName2.Text = jugador.Nombre;
+            lblRange2.Text = jugador.Rango;
+            lblLevel2.Text = "Nivel " + jugador.Nivel;
+
             if (jugador.Avatar != null)
             {
                 picAvatar.Image = jugador.Avatar;
