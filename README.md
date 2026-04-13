@@ -22,12 +22,6 @@ En conjunto, ambos patrones proporcionan una arquitectura que facilita la extens
 
 ---
 
-# Diagrama UML
-
-[image.png](https://postimg.cc/67b8CG69)
-
----
-
 # Conclusión
 
 La combinación de los patrones de diseño **Decorador** y **Bridge** proporciona una solución robusta y bien estructurada para la personalización de armas en videojuegos.  
