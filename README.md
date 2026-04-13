@@ -24,7 +24,7 @@ En conjunto, ambos patrones proporcionan una arquitectura que facilita la extens
 
 # Diagrama UML
 
-[![image.png](https://i.postimg.cc/yxnPg7tW/image.png)](https://postimg.cc/7JG7jrxy)
+[image.png](https://postimg.cc/67b8CG69)
 
 ---
 
