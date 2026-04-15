@@ -20,7 +20,9 @@ Con **Decorador**, se pretende permitir la adición de accesorios de forma diná
 
 En conjunto, ambos patrones proporcionan una arquitectura que facilita la extensión del sistema, mejora la reutilización del código y mantiene el control sobre la complejidad conforme se agregan más tipos de armas y accesorios.
 
----
+# DiagramaUML
+<img width="1600" height="1171" alt="diagrama decorator-bridge" src="https://github.com/user-attachments/assets/d23a8ee6-0f8f-43a0-8740-b9d14a760787" />
+
 
 # Conclusión
 
